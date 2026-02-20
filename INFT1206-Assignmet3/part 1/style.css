@@ -19,3 +19,19 @@ h2{
     font-size: italic;
     font-size: 1.5rem;
 }
+
+div{
+  color: darkslategray;
+}
+
+.box {
+  color: darkslategray;
+  font-weight: bold;
+}
+
+a {
+  color: green;
+}
+a:hover, a:focus{ 
+    color: darkgreen;
+}
