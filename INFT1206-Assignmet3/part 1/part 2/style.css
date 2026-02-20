@@ -76,3 +76,20 @@ section h2 + p {
   text-indent: 2rem;
 }
 
+a:link {
+  color: purple;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rebeccapurple;
+}
+
+a:hover,
+a:focus {
+  color: darkviolet;
+  text-decoration: none;   /* remove underline on hover/focus */
+}
+a {
+  outline: none;
+}
