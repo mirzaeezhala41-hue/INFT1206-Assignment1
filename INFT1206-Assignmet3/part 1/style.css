@@ -22,7 +22,10 @@ h2{
 
 div{
   color: darkslategray;
+
 }
+
+
 
 .box {
   color: darkslategray;
@@ -32,6 +35,4 @@ div{
 a {
   color: green;
 }
-a:hover, a:focus{ 
-    color: darkgreen;
-}
+
