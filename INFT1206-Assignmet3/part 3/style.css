@@ -9,12 +9,14 @@ body {
   font: 1.2em / 1.6 sans-serif;
 }
 
+/* Images */
 img {
   max-width: 100%;
   display: block;
   border: 1px solid black;
 }
 
+/* Logo / Title */
 .logo {
   font-size: 200%;
   padding: 50px 20px;
@@ -22,11 +24,16 @@ img {
   max-width: 980px;
 }
 
+/* Main layout */
 .grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
   margin: 0 auto;
   max-width: 980px;
 }
 
+/* Navigation bar */
 nav {
   background-color: black;
   padding: 0.5em;
@@ -36,6 +43,8 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a {
@@ -44,39 +53,24 @@ nav a {
   padding: 0.5em 1em;
 }
 
+nav a:hover {
+  background-color: #444;
+}
+
+/* Blog feature image */
+.feature {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Photography section */
 .photos {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.feature {
-  width: 200px;
-}
-
-
-/* Main page layout */
-.grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-}
-
-/* Navigation menu in one row */
-nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-/* Featured image beside text */
-.feature {
-  float: left;
-  margin-right: 20px;
-}
-
-/* Photography images grid */
-.photos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-} 
+  gap: 15px;
+}
