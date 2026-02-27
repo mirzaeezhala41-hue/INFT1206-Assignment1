@@ -61,3 +61,9 @@ nav a {
   grid-template-columns: 2fr 1fr;
   gap: 20px;
 }
+
+/* Navigation menu in one row */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
