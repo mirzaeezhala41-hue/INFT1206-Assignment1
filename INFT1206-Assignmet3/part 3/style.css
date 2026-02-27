@@ -67,3 +67,9 @@ nav ul {
   display: flex;
   justify-content: space-around;
 }
+
+/* Featured image beside text */
+.feature {
+  float: left;
+  margin-right: 20px;
+}
