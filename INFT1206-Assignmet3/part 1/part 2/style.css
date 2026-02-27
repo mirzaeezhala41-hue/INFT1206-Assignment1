@@ -34,62 +34,50 @@ footer p {
   text-align: center;
 }
 
-body {
-    font-family: 'Merriweather', serif;
-  font-size: 1.2em;
-  line-height: 1.5;
-  padding: 20px;
-  width: 500px;
-  background-color: #efefef;
-  margin: 0 auto;
+.h1 {
+    font-size: 3em;
+}
+.h2 { 
+    font-size: 2.2em;
 }
 
-h1, h2 {
-    font-family:' Roboto Slab', serif;
-    font-weight: 700;
-}
-
-body {
-  font-family: 'Merriweather', serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  letter-spacing: 0.02rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  letter-spacing: 0.05rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0;
-  letter-spacing: 0.04rem;
-}
-
-p {
-  letter-spacing: 0.02rem;
-}
-
-section h2 + p {
-  text-indent: 2rem;
+main section p {
+    font-size: 1.2em;
 }
 
 a:link {
-  color: purple;
-  text-decoration: underline;
+    color: #aa6666;
 }
 
 a:visited {
-  color: rebeccapurple;
+    color:rgb(228, 105, 105)
 }
 
-a:hover,
-a:focus {
-  color: darkviolet;
-  text-decoration: none;   /* remove underline on hover/focus */
+a:hover {
+    color:rgb(226, 127, 127)
 }
-a {
-  outline: none;
+
+a:focus { 
+    color: #ac5b5b;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1em 0;
+    border: 1px solid #aa6666;
+}
+
+nav ul li a {
+    display: block;              /* makes whole box clickable */
+    padding: 20px;
+    font-size: 1.5rem;           /* better to use rem */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #aa6666;
 }
