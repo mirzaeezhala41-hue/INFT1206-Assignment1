@@ -36,6 +36,7 @@ footer p {
 
 .h1 {
     font-size: 3em;
+    text-align: center;
 }
 .h2 { 
     font-size: 2.2em;
@@ -80,4 +81,11 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
     color: #aa6666;
+}
+
+img {
+    width: 10px;
+}
+p { 
+    text-indent: 0.3in;
 }
