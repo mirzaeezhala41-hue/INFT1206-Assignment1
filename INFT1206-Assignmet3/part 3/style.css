@@ -54,3 +54,10 @@ nav a {
   width: 200px;
 }
 
+
+/* Main page layout */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
