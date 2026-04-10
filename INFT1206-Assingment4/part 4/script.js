@@ -140,6 +140,14 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+// ===== Evil circle instance =====
+const evil = new EvilCircle(width / 2, height / 2);
+
+// ===== Ball counter =====
+function countBalls() {
+  const count = balls.filter((ball) => ball.exists).length;
+  para.textContent = `Ball count: ${count}`;
+}
 
 
 // ===== Animation loop =====
