@@ -1,0 +1,8 @@
+.story {
+  background-color: rgb(247, 187, 8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  visibility: hidden; /* stays hidden until JS makes it visible */
+}
