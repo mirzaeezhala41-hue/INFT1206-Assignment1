@@ -7,11 +7,6 @@ function randomValueFromArray(array) {
   return array[random];
 }
 
-const characters = [
-  "Willy the Goblin",
-  "Big Daddy",
-  "Father Christmas"
-];
 
 const places = [
   "the soup kitchen",
