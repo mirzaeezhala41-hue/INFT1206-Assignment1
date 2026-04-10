@@ -32,14 +32,15 @@ for (const img of images) {
   newImage.setAttribute("tabindex", "0");
 
   // Click event → update displayed image
-  newImage.addEventListener("click", updateDisplayedImage);
+ newImage.addEventListener("click", () => {
+  updateDisplayedImage(newImage);
+});
 
-  // Keyboard event → Enter key updates image
-  newImage.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-      updateDisplayedImage.call(newImage);
-    }
-  });
+newImage.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    updateDisplayedImage(newImage);
+  }
+});
 
   thumbBar.appendChild(newImage);
 }
@@ -48,9 +49,9 @@ for (const img of images) {
    3. Function to update big image
 ------------------------------ */
 
-function updateDisplayedImage() {
-  displayedImage.src = this.src;
-  displayedImage.alt = this.alt;
+function updateDisplayedImage(img) {
+  displayedImage.src = img.src;
+  displayedImage.alt = img.alt;
 }
 
 /* -----------------------------
