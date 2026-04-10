@@ -26,7 +26,14 @@ class Ball {
     this.size = size;
   }
 
-  
+  // Draw the ball on the canvas
+  draw() {
+    ctx.beginPath();
+    ctx.fillStyle = this.color;
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    ctx.fill();
+  }
+
   // Update the ball's position
   update() {
     if (this.x + this.size >= width || this.x - this.size <= 0) this.velX = -this.velX;
