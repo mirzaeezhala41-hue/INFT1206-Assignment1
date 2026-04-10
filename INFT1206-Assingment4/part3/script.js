@@ -87,3 +87,9 @@ function loop() {
     ball.collisionDetect();
   }
 
+// Repeat the loop
+  requestAnimationFrame(loop);
+}
+
+// Start the animation
+loop();
