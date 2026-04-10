@@ -34,7 +34,16 @@ class Ball {
     ctx.fill();
   }
 
-  
+  // Update the ball's position
+  update() {
+    if (this.x + this.size >= width || this.x - this.size <= 0) this.velX = -this.velX;
+    if (this.y + this.size >= height || this.y - this.size <= 0) this.velY = -this.velY;
+
+    this.x += this.velX;
+    this.y += this.velY;
+  }
+
+
   // Check for collision with other balls
   collisionDetect() {
     for (const ball of balls) {
@@ -78,9 +87,3 @@ function loop() {
     ball.collisionDetect();
   }
 
-  // Repeat the loop
-  requestAnimationFrame(loop);
-}
-
-// Start the animation
-loop();
