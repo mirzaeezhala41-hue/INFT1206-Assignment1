@@ -13,7 +13,17 @@ const characters = [
   "Father Christmas"
 ];
 
+const places = [
+  "the soup kitchen",
+  "Disneyland",
+  "the White House"
+];
 
+const events = [
+  "spontaneously combusted",
+  "melted into a puddle on the sidewalk",
+  "turned into a slug and slithered away"
+];
 function returnRandomStoryString() {
   const randomCharacter = randomValueFromArray(characters);
   const randomPlace = randomValueFromArray(places);
