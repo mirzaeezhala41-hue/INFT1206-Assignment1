@@ -14,12 +14,6 @@ header {
   padding: 30px 10px;
 }
 
-header h1 {
-  font-style: italic;
-  font-size: 36px;
-  color: #ffffff;
-  text-shadow: 2px 2px 3px #888;
-}
 
 /* Navigation bar */
 nav {
