@@ -3,7 +3,7 @@ Name: Zhala
 File: index.html 
 Date: 2026-04-19
 An accessible web page about bears with text, image, audio, table, and comments.-->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -95,7 +95,7 @@ An accessible web page about bears with text, image, audio, table, and comments.
     </table>
 
     <!-- Comments toggle -->
-    <button id="toggleBtn" aria-expanded="false">Show Comments</button>
+   <button id="toggleBtn" aria-expanded="false" aria-controls="comments">Show Comments</button>
 
     <div id="comments">
       <h3>Comments</h3>
@@ -107,8 +107,8 @@ An accessible web page about bears with text, image, audio, table, and comments.
         <label for="comment">Comment:</label>
         <input type="text" id="comment">
 
-        <label for="search" class="sr-only">Search</label>
-<input type="text" id="search" placeholder="Search query">
+        <label for="commentsearch" class="sr-only">Search</label>
+<input type="text" id="commentsearch" placeholder="Search query">
 
         <button type="submit">Submit</button>
       </form>
