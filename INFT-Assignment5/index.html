@@ -1,0 +1,109 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Bear Article</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>All About Bears</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- Search Form -->
+<form>
+  <label for="search" class="sr-only">Search</label>
+  <input type="text" id="search" placeholder="Search...">
+  <button type="submit">Go</button>
+</form>
+
+<main>
+  <article>
+
+    <h2>About Bears</h2>
+    <p>Bears are large mammals found in many parts of the world. They are strong and intelligent animals.</p>
+
+    <h3>Habitat</h3>
+    <p>Bears live in forests, mountains, and cold regions like the Arctic.</p>
+
+    <h3>Diet</h3>
+    <p>Bears are omnivores, meaning they eat both plants and animals.</p>
+
+    <!-- Image -->
+    <img src="bear.jpg" alt="A brown bear standing in a forest">
+
+    <!-- Audio -->
+    <h3>Bear Sound</h3>
+    <audio controls>
+      <source src="bear.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+      <a href="bear.mp3">Download audio</a>
+    </audio>
+
+    <!-- Transcript -->
+    <p><strong>Transcript:</strong> This audio plays the sound of a bear growling.</p>
+
+    <!-- Table -->
+    <h3>Bear Population</h3>
+    <table>
+      <caption>Estimated bear population by region</caption>
+      <thead>
+        <tr>
+          <th scope="col">Region</th>
+          <th scope="col">Population</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Canada</th>
+          <td>50000</td>
+        </tr>
+        <tr>
+          <th scope="row">USA</th>
+          <td>30000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Toggle Comments -->
+    <button id="toggleBtn" aria-expanded="false">Show Comments</button>
+
+    <div id="comments">
+      <h3>Comments</h3>
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment">
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </article>
+</main>
+
+<footer>
+  <p>© 2026 Bear Website</p>
+</footer>
+
+<!-- Link JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
+```
