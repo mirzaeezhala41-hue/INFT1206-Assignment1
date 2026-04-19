@@ -60,11 +60,6 @@ button {
 }
 
 /* Layout */
-main {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
 
 /* Article (left side) */
 article {
