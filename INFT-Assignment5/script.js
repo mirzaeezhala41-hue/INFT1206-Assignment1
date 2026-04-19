@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+  const toggleBtn = document.getElementById("toggleBtn");
+  const comments = document.getElementById("comments");
 
 
   
