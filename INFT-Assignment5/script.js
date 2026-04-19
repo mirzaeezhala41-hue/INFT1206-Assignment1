@@ -22,5 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleBtn.setAttribute("aria-expanded", "false");
     }
   }
- 
+  // Mouse click
+  toggleBtn.addEventListener("click", toggleComments);
+
+  // Keyboard support (Enter + Space)
+  toggleBtn.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleComments();
+    }
+  });
+
+});
+
 
